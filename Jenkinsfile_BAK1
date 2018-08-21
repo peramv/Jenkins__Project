@@ -1,6 +1,6 @@
 node {
      cleanWs()
-     checkout([$class: 'GitSCM', branches: [[name: '*/reddy']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[url: 'git@github.com:nogiboina/Jenkins-Project.git']]])
+     checkout([$class: 'GitSCM', branches: [[name: '*/reddy']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[url: 'git@github.com:peramv/Jenkins__Project.git']]])
      sh 'mvn clean compile install'
      archiveArtifacts '**/*.jar'
     
